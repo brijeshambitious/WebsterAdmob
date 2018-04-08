@@ -822,8 +822,10 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     }
 
     private void openAboutActivity() {
+       // startActivity(new Intent(this, AboutActivity.class));
+
         Intent aboutIntent = new Intent(this, AboutActivity.class);
-        startActivity(aboutIntent);
+       startActivity(aboutIntent);
         this.overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
     }
 
