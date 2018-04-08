@@ -805,6 +805,13 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
             case R.id.action_menu:
                 openAboutActivity();
                 break;
+
+            case R.id.action_privacy:
+                Intent browserAPI = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://sites.google.com/site/appwsternews/privacy-policy"));
+                startActivity(browserAPI);
+                break;
+
             case R.id.action_search:
                 openSearchActivity();
                 break;
